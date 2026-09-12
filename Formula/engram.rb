@@ -5,20 +5,20 @@
 class Engram < Formula
   desc "MCP server for long-term semantic memory"
   homepage "https://github.com/AWDDude/engRam"
-  version "2.0.0"
+  version "2.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AWDDude/engRam/releases/download/v2.0.0/engram_darwin_amd64.tar.gz"
-      sha256 "4165d10717e455335e530a0a83b6d84c1045ba0fd68a8ac71ccebf924a048fa5"
+      url "https://github.com/AWDDude/engRam/releases/download/v2.0.1/engram_darwin_amd64.tar.gz"
+      sha256 "d0a13ca8f677ef3470f6812edc7e84ea0f63ff6793546714aaa535883c95e2ec"
 
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AWDDude/engRam/releases/download/v2.0.0/engram_darwin_arm64.tar.gz"
-      sha256 "8868c7ae7208f7acb7f2dd6ba4fb89c321b293ec2f1004c170201e6d03e16ac3"
+      url "https://github.com/AWDDude/engRam/releases/download/v2.0.1/engram_darwin_arm64.tar.gz"
+      sha256 "3e399b3308f45e632c0b282792f0cc6763ba3d185a9e26ab12e4c490cdc02d67"
 
       define_method(:install) do
         bin.install "engram"
@@ -28,15 +28,15 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AWDDude/engRam/releases/download/v2.0.0/engram_linux_amd64.tar.gz"
-      sha256 "6c0ea4ab51ad74707fee7e688d198f158ba1f2c5be1ac10303ff18b14da0f132"
+      url "https://github.com/AWDDude/engRam/releases/download/v2.0.1/engram_linux_amd64.tar.gz"
+      sha256 "47034be7516c79d02540e378284019247a69336abc373b8b7c7e98b9c2ccbc1b"
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AWDDude/engRam/releases/download/v2.0.0/engram_linux_arm64.tar.gz"
-      sha256 "592925ab2a54c2e60bfa4853c3b36105d128e9fab50421782483232a02ceddd8"
+      url "https://github.com/AWDDude/engRam/releases/download/v2.0.1/engram_linux_arm64.tar.gz"
+      sha256 "97162e4da362f0d9f8da66ad0da5899795db72d38d4eb779a7952abbd5752e14"
       define_method(:install) do
         bin.install "engram"
       end
